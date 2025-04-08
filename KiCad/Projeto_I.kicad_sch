@@ -4550,10 +4550,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:LM7805_TO220"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:AMS1117-5.0"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4565,7 +4562,7 @@
 					)
 				)
 			)
-			(property "Value" "LM7805_TO220"
+			(property "Value" "AMS1117-5.0"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -4574,18 +4571,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 0 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-				(at 0 -1.27 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4593,7 +4580,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4602,7 +4598,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 1A Positive"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4611,7 +4607,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?220*"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4620,10 +4616,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM7805_TO220_0_1"
+			(symbol "AMS1117-5.0_0_1"
 				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -4633,11 +4629,11 @@
 					)
 				)
 			)
-			(symbol "LM7805_TO220_1_1"
+			(symbol "AMS1117-5.0_1_1"
 				(pin power_in line
-					(at -7.62 0 0)
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VI"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4652,10 +4648,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "GND"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4670,10 +4666,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "VO"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5572,8 +5568,8 @@
 		(uuid "4fcf7b52-785d-4513-aabf-09143c3f7e49")
 	)
 	(no_connect
-		(at 116.84 160.02)
-		(uuid "508d87b5-dfc6-4d80-8365-c3c447eec8a0")
+		(at 15.24 175.26)
+		(uuid "51bb7cc4-c13d-402a-8d5b-bb637746302c")
 	)
 	(no_connect
 		(at 81.28 77.47)
@@ -5584,16 +5580,16 @@
 		(uuid "72fc079d-c94e-4cec-904a-b4d159a2d7fa")
 	)
 	(no_connect
-		(at 132.08 162.56)
-		(uuid "75d2ac1a-addf-41ae-89ba-1e69d780d282")
+		(at 30.48 172.72)
+		(uuid "931875c7-459e-4396-b629-84954f03aee5")
+	)
+	(no_connect
+		(at 15.24 170.18)
+		(uuid "9663aa8c-964c-47c1-9366-9d5718812a44")
 	)
 	(no_connect
 		(at 110.49 123.19)
 		(uuid "bb5e94fa-b7f8-4cd8-8fcf-0c02794a0033")
-	)
-	(no_connect
-		(at 116.84 165.1)
-		(uuid "c2c5b389-f962-4b3c-a587-b6411af427dd")
 	)
 	(no_connect
 		(at 81.28 82.55)
@@ -6021,7 +6017,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 135.89) (xy 52.07 137.16)
+			(xy 49.53 135.89) (xy 49.53 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6141,7 +6137,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 133.35) (xy 54.61 134.62)
+			(xy 52.07 133.35) (xy 52.07 134.62)
 		)
 		(stroke
 			(width 0)
@@ -6191,7 +6187,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 130.81) (xy 52.07 130.81)
+			(xy 48.26 130.81) (xy 49.53 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6411,7 +6407,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 133.35) (xy 54.61 133.35)
+			(xy 48.26 133.35) (xy 52.07 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6421,7 +6417,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 133.35) (xy 16.51 134.62)
+			(xy 68.58 135.89) (xy 68.58 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6521,7 +6517,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 134.62) (xy 31.75 135.89)
+			(xy 83.82 137.16) (xy 83.82 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6541,7 +6537,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 135.89) (xy 52.07 135.89)
+			(xy 48.26 135.89) (xy 49.53 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6551,7 +6547,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 134.62) (xy 19.05 134.62)
+			(xy 68.58 137.16) (xy 71.12 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6831,7 +6827,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 134.62) (xy 25.4 134.62)
+			(xy 76.2 137.16) (xy 77.47 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6901,7 +6897,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 134.62) (xy 30.48 134.62)
+			(xy 83.82 137.16) (xy 82.55 137.16)
 		)
 		(stroke
 			(width 0)
@@ -8270,7 +8266,7 @@
 	)
 	(global_label "PwrIn"
 		(shape output)
-		(at 52.07 130.81 0)
+		(at 49.53 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8280,7 +8276,7 @@
 		)
 		(uuid "75b5a244-67b5-4dfe-9586-c224eb15e81b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.1957 130.81 0)
+			(at 57.6557 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9266,7 +9262,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 103.1748 27.94 0)
 			(effects
 				(font
@@ -9379,7 +9375,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 31.75 135.89 0)
+		(at 83.82 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9388,7 +9384,7 @@
 		(fields_autoplaced yes)
 		(uuid "0562f52e-8d31-4f6c-8348-093c9c40d95f")
 		(property "Reference" "#PWR028"
-			(at 31.75 142.24 0)
+			(at 83.82 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9397,7 +9393,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 31.75 140.97 0)
+			(at 83.82 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9406,7 +9402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 135.89 0)
+			(at 83.82 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9415,7 +9411,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 135.89 0)
+			(at 83.82 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9424,7 +9420,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 31.75 135.89 0)
+			(at 83.82 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9659,7 +9655,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 21.59 134.62 90)
+		(at 73.66 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9667,7 +9663,7 @@
 		(dnp no)
 		(uuid "0e71eca9-3a3e-4a91-9055-192422699ed4")
 		(property "Reference" "R8"
-			(at 21.59 131.826 90)
+			(at 73.66 134.366 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9675,7 +9671,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 21.59 137.414 90)
+			(at 73.66 139.954 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9683,7 +9679,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 21.59 134.62 0)
+			(at 73.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9692,7 +9688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 21.59 134.62 0)
+			(at 73.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9701,7 +9697,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 21.59 134.62 0)
+			(at 73.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10344,7 +10340,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 16.51 133.35 0)
+		(at 68.58 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10353,7 +10349,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a630353-a718-4ddb-9841-cba39d047a2a")
 		(property "Reference" "#PWR040"
-			(at 16.51 137.16 0)
+			(at 68.58 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10362,7 +10358,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 16.51 128.27 0)
+			(at 68.58 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10370,7 +10366,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 16.51 133.35 0)
+			(at 68.58 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10379,7 +10375,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 133.35 0)
+			(at 68.58 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10388,7 +10384,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 16.51 133.35 0)
+			(at 68.58 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10404,6 +10400,92 @@
 				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
 					(reference "#PWR040")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 22.86 172.72 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e6d243f-e411-4cac-a7b2-1c9db3ac0a58")
+		(property "Reference" "U3"
+			(at 22.86 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM358"
+			(at 22.86 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 22.86 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 22.86 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 22.86 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f2a29447-ed68-4d77-baf8-b89a31918037")
+		)
+		(pin "6"
+			(uuid "131f839a-2c36-46f3-a7b3-872da0b37025")
+		)
+		(pin "7"
+			(uuid "f8987715-ac1b-45bc-95c4-d6436d8faabf")
+		)
+		(pin "8"
+			(uuid "e05d1b3b-61db-4907-8452-0ae4ea7d2db5")
+		)
+		(pin "3"
+			(uuid "2b6b4bb9-1fa9-41a3-975c-6d9390751d6d")
+		)
+		(pin "2"
+			(uuid "08dcc807-9ec3-41c0-bfa7-dfba3aa5d4b5")
+		)
+		(pin "1"
+			(uuid "732ef781-456b-49f2-b6e6-0eddf2c6758f")
+		)
+		(pin "4"
+			(uuid "868b8e85-a917-4d03-ab55-b5ff105a67aa")
+		)
+		(instances
+			(project "Projeto_I"
+				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
+					(reference "U3")
+					(unit 2)
 				)
 			)
 		)
@@ -12057,7 +12139,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 27.94 134.62 180)
+		(at 80.01 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12065,7 +12147,7 @@
 		(dnp no)
 		(uuid "73ddc8f6-2bb0-455a-9bbb-0cf2b64079bf")
 		(property "Reference" "D8"
-			(at 27.686 132.588 0)
+			(at 79.756 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12073,7 +12155,7 @@
 			)
 		)
 		(property "Value" "RD0"
-			(at 27.94 137.668 0)
+			(at 80.01 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12082,7 +12164,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 27.94 134.62 90)
+			(at 80.01 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12091,7 +12173,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 27.94 134.62 90)
+			(at 80.01 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12100,7 +12182,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 27.94 134.62 0)
+			(at 80.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12256,7 +12338,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 54.61 134.62 0)
+		(at 52.07 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12265,7 +12347,7 @@
 		(fields_autoplaced yes)
 		(uuid "7bd266d7-c5fe-43f0-be4b-63f9011656b2")
 		(property "Reference" "#PWR045"
-			(at 54.61 140.97 0)
+			(at 52.07 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12274,7 +12356,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 54.61 139.7 0)
+			(at 52.07 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12283,7 +12365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 134.62 0)
+			(at 52.07 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12292,7 +12374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 134.62 0)
+			(at 52.07 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12301,7 +12383,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 54.61 134.62 0)
+			(at 52.07 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13184,6 +13266,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117-5.0")
+		(at 40.64 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0f77188-8d6f-4aa1-9daa-84a02efca597")
+		(property "Reference" "U6"
+			(at 40.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-5.0"
+			(at 40.64 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 40.64 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 43.18 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+			(at 40.64 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "792968bb-4baf-4d4d-b9a9-d06fd15066e9")
+		)
+		(pin "2"
+			(uuid "b24c6766-929b-4f9e-adea-e5714e3e0048")
+		)
+		(pin "1"
+			(uuid "392f7177-1735-4bed-8eb5-f346d550b56b")
+		)
+		(instances
+			(project ""
+				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 40.64 121.92 0)
 		(unit 1)
@@ -13278,7 +13431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 117.8052 35.56 0)
 			(effects
 				(font
@@ -13457,91 +13610,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 124.46 162.56 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b9f2739f-ed9a-481b-903e-9109ef584ea7")
-		(property "Reference" "U3"
-			(at 124.714 156.464 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 125.73 167.386 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 124.46 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 124.46 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 124.46 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "f2a29447-ed68-4d77-baf8-b89a31918039")
-		)
-		(pin "6"
-			(uuid "131f839a-2c36-46f3-a7b3-872da0b37027")
-		)
-		(pin "7"
-			(uuid "f8987715-ac1b-45bc-95c4-d6436d8faac1")
-		)
-		(pin "8"
-			(uuid "e05d1b3b-61db-4907-8452-0ae4ea7d2db7")
-		)
-		(pin "3"
-			(uuid "6289ab43-573d-4c76-bd64-1b9c338ca207")
-		)
-		(pin "2"
-			(uuid "137358aa-f612-4e09-b463-eee4043f26e2")
-		)
-		(pin "1"
-			(uuid "26f7dd48-f54e-499b-ac24-8f1ccde3d899")
-		)
-		(pin "4"
-			(uuid "868b8e85-a917-4d03-ab55-b5ff105a67ac")
-		)
-		(instances
-			(project ""
-				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
-					(reference "U3")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 158.75 50.8 90)
 		(unit 1)
@@ -13670,78 +13738,6 @@
 			(project "Projeto_I"
 				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM7805_TO220")
-		(at 40.64 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c11068d9-cc11-4cff-b4db-1a6083c6fa79")
-		(property "Reference" "U2"
-			(at 40.64 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM7805"
-			(at 40.64 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 40.64 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-			(at 40.64 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
-			(at 40.64 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c3bf53f3-e874-4046-ab34-69e477e28685")
-		)
-		(pin "3"
-			(uuid "b82a8c24-18af-41fd-8e21-93877d3b0878")
-		)
-		(pin "1"
-			(uuid "b788b731-bbf7-4cc6-9870-c44e8300766b")
-		)
-		(instances
-			(project ""
-				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -13991,7 +13987,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P3.80mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 31.75 118.11 0)
 			(effects
 				(font
@@ -14576,7 +14572,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 43.18 133.35 0)
+		(at 40.64 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14584,7 +14580,7 @@
 		(dnp no)
 		(uuid "e0a3b0ac-4933-4262-b581-30e4f360849f")
 		(property "Reference" "J5"
-			(at 43.18 127.762 0)
+			(at 40.64 127.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14592,7 +14588,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 43.18 127 0)
+			(at 40.64 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14601,7 +14597,7 @@
 			)
 		)
 		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
-			(at 44.45 134.366 0)
+			(at 41.91 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14610,7 +14606,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 134.366 0)
+			(at 41.91 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14619,7 +14615,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 43.18 133.35 0)
+			(at 40.64 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14874,7 +14870,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_HandSolder"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 220.98 77.47 0)
 			(effects
 				(font
@@ -15107,7 +15103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P3.80mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 76.2 116.84 0)
 			(effects
 				(font
@@ -15419,7 +15415,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 52.07 137.16 0)
+		(at 49.53 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15428,7 +15424,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb9eb40d-d499-4ad2-b0a5-bf46b2dd0e35")
 		(property "Reference" "#PWR044"
-			(at 52.07 143.51 0)
+			(at 49.53 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15437,7 +15433,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 52.07 142.24 0)
+			(at 49.53 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15446,7 +15442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 137.16 0)
+			(at 49.53 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15455,7 +15451,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 137.16 0)
+			(at 49.53 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15464,7 +15460,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 52.07 137.16 0)
+			(at 49.53 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
