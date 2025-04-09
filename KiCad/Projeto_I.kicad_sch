@@ -7582,18 +7582,6 @@
 		)
 		(uuid "de0b9a70-8dba-468e-b275-6a9d91099d07")
 	)
-	(text "-proteção ESD para a conexão USB;"
-		(exclude_from_sim no)
-		(at 12.954 194.564 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left)
-		)
-		(uuid "f445fcfe-6d3e-4489-9fa5-b22263a7cf7b")
-	)
 	(text "Circuito de Alimentação"
 		(exclude_from_sim no)
 		(at 26.416 102.616 0)
@@ -7608,6 +7596,7 @@
 	)
 	(label "USB_D-"
 		(at 113.03 130.81 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7618,6 +7607,7 @@
 	)
 	(label "USB_D+"
 		(at 114.3 128.27 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11010,16 +11000,16 @@
 			)
 		)
 		(pin "5"
-			(uuid "f2a29447-ed68-4d77-baf8-b89a31918037")
+			(uuid "f2a29447-ed68-4d77-baf8-b89a31918038")
 		)
 		(pin "6"
-			(uuid "131f839a-2c36-46f3-a7b3-872da0b37025")
+			(uuid "131f839a-2c36-46f3-a7b3-872da0b37026")
 		)
 		(pin "7"
-			(uuid "f8987715-ac1b-45bc-95c4-d6436d8faabf")
+			(uuid "f8987715-ac1b-45bc-95c4-d6436d8faac0")
 		)
 		(pin "8"
-			(uuid "e05d1b3b-61db-4907-8452-0ae4ea7d2db5")
+			(uuid "e05d1b3b-61db-4907-8452-0ae4ea7d2db6")
 		)
 		(pin "3"
 			(uuid "6289ab43-573d-4c76-bd64-1b9c338ca205")
@@ -11031,7 +11021,7 @@
 			(uuid "26f7dd48-f54e-499b-ac24-8f1ccde3d897")
 		)
 		(pin "4"
-			(uuid "868b8e85-a917-4d03-ab55-b5ff105a67aa")
+			(uuid "868b8e85-a917-4d03-ab55-b5ff105a67ab")
 		)
 		(instances
 			(project ""
@@ -13032,16 +13022,16 @@
 			)
 		)
 		(pin "5"
-			(uuid "f2a29447-ed68-4d77-baf8-b89a31918038")
+			(uuid "f2a29447-ed68-4d77-baf8-b89a31918039")
 		)
 		(pin "6"
-			(uuid "131f839a-2c36-46f3-a7b3-872da0b37026")
+			(uuid "131f839a-2c36-46f3-a7b3-872da0b37027")
 		)
 		(pin "7"
-			(uuid "f8987715-ac1b-45bc-95c4-d6436d8faac0")
+			(uuid "f8987715-ac1b-45bc-95c4-d6436d8faac1")
 		)
 		(pin "8"
-			(uuid "e05d1b3b-61db-4907-8452-0ae4ea7d2db6")
+			(uuid "e05d1b3b-61db-4907-8452-0ae4ea7d2db7")
 		)
 		(pin "3"
 			(uuid "6289ab43-573d-4c76-bd64-1b9c338ca206")
@@ -13053,7 +13043,7 @@
 			(uuid "26f7dd48-f54e-499b-ac24-8f1ccde3d898")
 		)
 		(pin "4"
-			(uuid "868b8e85-a917-4d03-ab55-b5ff105a67ab")
+			(uuid "868b8e85-a917-4d03-ab55-b5ff105a67ac")
 		)
 		(instances
 			(project ""
