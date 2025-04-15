@@ -58,7 +58,30 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "annular_width|116800000|66050000|13e77bd7-88bc-4289-bba1-22b36ca81a69|00000000-0000-0000-0000-000000000000",
+        "annular_width|116800000|74400000|7695312b-3995-4419-b29c-f0dc2d4413e2|00000000-0000-0000-0000-000000000000",
+        "annular_width|119800000|68000000|2a268bb0-01f7-4c3d-b1c6-68272bb11038|00000000-0000-0000-0000-000000000000",
+        "annular_width|119800000|72450000|7fc2d431-15ef-41d9-806a-a09a099d505f|00000000-0000-0000-0000-000000000000",
+        "clearance|120588000|70325000|07f3e46a-95b1-4ca7-adae-fd220ef57d01|03398003-e4c3-4d04-8f21-603f399b11c2",
+        "clearance|120588000|70325000|31ad55a0-bdab-4c6f-b76f-31f950be955c|03398003-e4c3-4d04-8f21-603f399b11c2",
+        "clearance|120588000|70775000|2165c350-9d3e-4373-9e77-109e897be654|31ad55a0-bdab-4c6f-b76f-31f950be955c",
+        "clearance|122564000|70775000|78c3edb4-422a-48c3-b4d6-0dbb9f57561f|31ad55a0-bdab-4c6f-b76f-31f950be955c",
+        "clearance|128719000|71525000|14d81c1c-5207-4134-8b23-6d00acd5f99d|c38fc820-98e5-4948-886e-6c65efaa19df",
+        "clearance|128719000|71525000|acef01dc-36fb-4d2e-9521-827c8a960291|c38fc820-98e5-4948-886e-6c65efaa19df",
+        "clearance|128719000|71975000|19b92b86-422a-46c9-94e1-d0324b9ad63d|acef01dc-36fb-4d2e-9521-827c8a960291",
+        "clearance|191759000|71525000|cb942d30-ade2-4e00-a51a-4398f69182b4|c38fc820-98e5-4948-886e-6c65efaa19df",
+        "clearance|197925000|65545000|11e191ee-1abf-47bc-b55f-81fb7a909251|5f6bead3-bf22-44f1-84b4-5c24d05c3963",
+        "clearance|198056800|67375000|3f4c4567-c474-4e79-aa01-e715e980b83b|5f6bead3-bf22-44f1-84b4-5c24d05c3963",
+        "clearance|198375000|65545000|24a499d4-2e04-40d1-998e-ff52914a7ddd|a79d4373-669b-4e4c-aa41-f21169ad00a6",
+        "clearance|198375000|65545000|5f6bead3-bf22-44f1-84b4-5c24d05c3963|a79d4373-669b-4e4c-aa41-f21169ad00a6",
+        "clearance|198375000|67056800|04ca53a9-fb5a-4716-bea1-90f9a0000ae5|11e191ee-1abf-47bc-b55f-81fb7a909251",
+        "clearance|204685000|74003200|91c4340a-cd53-4bd9-9910-c661c9ee391a|04ca53a9-fb5a-4716-bea1-90f9a0000ae5",
+        "clearance|204685000|86455000|fa5bab3c-cb2c-4c3e-9164-635362fcb083|2c3cb1e3-d089-4cd3-9ede-5bcfe3edaa20",
+        "clearance|205135000|74003200|c8ed1aa8-ab76-437e-869f-191152e2ba03|3f4c4567-c474-4e79-aa01-e715e980b83b",
+        "clearance|205135000|86455000|2c3cb1e3-d089-4cd3-9ede-5bcfe3edaa20|91c4340a-cd53-4bd9-9910-c661c9ee391a",
+        "starved_thermal|119475000|68925000|d4c65f63-9e36-4479-8d99-b89a3dbde132|d77b7fae-cdb7-4f8d-9106-e28362f226e6|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -541,13 +564,43 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Descrição",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Referência"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

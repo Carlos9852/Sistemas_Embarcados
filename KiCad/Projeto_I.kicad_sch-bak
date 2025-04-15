@@ -4932,158 +4932,16 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push"
+		(symbol "Simulation_SPICE:PMOS"
 			(pin_numbers hide)
 			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
+				(offset 0)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Transistor_FET:FDN340P"
-			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5091,8 +4949,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "FDN340P"
-				(at 5.08 0 0)
+			(property "Value" "PMOS"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5100,28 +4958,25 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDN340P-D.PDF"
-				(at 5.08 -3.81 0)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "-2A Id, -20V Vds, P-Channel MOSFET, 70mOhm Ron, SOT-23"
+			(property "Description" "P-MOSFET transistor, drain/source/gate"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5130,7 +4985,34 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "P-Channel MOSFET"
+			(property "Sim.Device" "PMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "VDMOS"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=D 2=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5139,16 +5021,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FDN340P_0_1"
+			(symbol "PMOS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -5315,7 +5188,25 @@
 					)
 				)
 			)
-			(symbol "FDN340P_1_1"
+			(symbol "PMOS_1_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -5326,7 +5217,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5344,7 +5235,134 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5353,16 +5371,16 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "D"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5928,16 +5946,6 @@
 			(type default)
 		)
 		(uuid "0ca9eb1b-8f9a-46e9-bdd7-eae70edd1c86")
-	)
-	(wire
-		(pts
-			(xy 223.52 74.93) (xy 226.06 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d63ae35-c58e-40f1-b6ad-9cb786a4381d")
 	)
 	(wire
 		(pts
@@ -6731,6 +6739,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 74.93) (xy 213.36 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd04884-59c9-4d21-99ce-980648a726d0")
+	)
+	(wire
+		(pts
 			(xy 102.87 129.54) (xy 104.14 129.54)
 		)
 		(stroke
@@ -6998,16 +7016,6 @@
 			(type default)
 		)
 		(uuid "a228a829-a6e2-4699-8799-8432ba67130a")
-	)
-	(wire
-		(pts
-			(xy 212.09 74.93) (xy 213.36 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2699cc4-0bba-4ffd-820f-b55abb328188")
 	)
 	(wire
 		(pts
@@ -7538,6 +7546,16 @@
 			(type default)
 		)
 		(uuid "ef1d3df0-97aa-46c2-a0a6-710041b40823")
+	)
+	(wire
+		(pts
+			(xy 223.52 74.93) (xy 226.06 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef3b3da6-c96d-43e2-b1ce-bd7c20adf885")
 	)
 	(wire
 		(pts
@@ -8313,7 +8331,7 @@
 			)
 		)
 	)
-	(global_label "D+"
+	(global_label "RC5"
 		(shape input)
 		(at 83.82 39.37 0)
 		(fields_autoplaced yes)
@@ -8325,7 +8343,7 @@
 		)
 		(uuid "4f260efb-9d73-4e14-a603-c49e3d56aa4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.6476 39.37 0)
+			(at 90.5547 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8489,7 +8507,7 @@
 			)
 		)
 	)
-	(global_label "D+"
+	(global_label "RC5"
 		(shape input)
 		(at 123.19 58.42 180)
 		(fields_autoplaced yes)
@@ -8501,7 +8519,7 @@
 		)
 		(uuid "62ebad8a-30b5-48ef-83e1-a56ea6cb55c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.3624 58.42 0)
+			(at 116.4553 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8511,7 +8529,7 @@
 			)
 		)
 	)
-	(global_label "D-"
+	(global_label "RC4"
 		(shape input)
 		(at 140.97 130.81 0)
 		(fields_autoplaced yes)
@@ -8523,7 +8541,7 @@
 		)
 		(uuid "636cd327-2ca2-4a95-a44c-bcf9565d45fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.7976 130.81 0)
+			(at 147.7047 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8665,7 +8683,7 @@
 			)
 		)
 	)
-	(global_label "D-"
+	(global_label "RC4"
 		(shape input)
 		(at 123.19 55.88 180)
 		(fields_autoplaced yes)
@@ -8677,7 +8695,7 @@
 		)
 		(uuid "7a10865f-26f3-4b46-90d2-beab3bb9eca8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.3624 55.88 0)
+			(at 116.4553 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9215,7 +9233,7 @@
 			)
 		)
 	)
-	(global_label "D+"
+	(global_label "RC5"
 		(shape input)
 		(at 140.97 128.27 0)
 		(fields_autoplaced yes)
@@ -9227,7 +9245,7 @@
 		)
 		(uuid "cff5bf0f-8db6-4599-b9a8-84c5da3e41d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.7976 128.27 0)
+			(at 147.7047 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9413,7 +9431,7 @@
 			)
 		)
 	)
-	(global_label "D-"
+	(global_label "RC4"
 		(shape input)
 		(at 83.82 36.83 0)
 		(fields_autoplaced yes)
@@ -9425,7 +9443,7 @@
 		)
 		(uuid "f9f7e807-6bfe-46d1-b431-9b49280930ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.6476 36.83 0)
+			(at 90.5547 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12020,80 +12038,6 @@
 			(project "Projeto_I"
 				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:FDN340P")
-		(at 218.44 72.39 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "61f66f85-1463-4a45-9653-8a0449328bff")
-		(property "Reference" "Q2"
-			(at 214.884 70.358 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FDN340P"
-			(at 218.44 78.486 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 220.345 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDN340P-D.PDF"
-			(at 222.25 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "-2A Id, -20V Vds, P-Channel MOSFET, 70mOhm Ron, SOT-23"
-			(at 218.44 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "173541b7-3139-4170-8e09-c65d049753b0")
-		)
-		(pin "2"
-			(uuid "ccd3b72d-401a-461e-a220-8272743f83d4")
-		)
-		(pin "1"
-			(uuid "048a22b2-1b38-4324-aff0-07416ce4a4a4")
-		)
-		(instances
-			(project ""
-				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -15498,6 +15442,103 @@
 			(project "Projeto_I"
 				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 218.44 72.39 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8246dc8-b0b1-46a5-8c74-bcc11c5ad4d6")
+		(property "Reference" "Q1"
+			(at 214.884 70.866 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FDN340P"
+			(at 218.44 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 220.98 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 205.74 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 218.44 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PMOS"
+			(at 201.295 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 199.39 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 203.2 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "5fa511e4-7422-4467-829d-8f1e7ddeb738")
+		)
+		(pin "2"
+			(uuid "8fb13309-913a-4bc3-8eb3-6197a0cc0be1")
+		)
+		(pin "1"
+			(uuid "8a451e22-f90b-4153-8e34-a086059848c1")
+		)
+		(instances
+			(project ""
+				(path "/6a6fca06-2a07-4cf6-8455-6f0f871f8bc9"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
