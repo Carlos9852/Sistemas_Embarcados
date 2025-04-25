@@ -3186,6 +3186,17 @@
 			(solder_mask_margin 0.102)
 			(uuid "86927d33-518e-44c3-a38b-9f17f1b772a7")
 		)
+		(model "C:/Users/carlo/OneDrive/Área de Trabalho/projeti/Projeto_I/Arquivos/MSMF050/MF-MSMF050-2.step"
+			(offset
+				(xyz 0 0 1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 0)
+			)
+		)
 	)
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -11269,6 +11280,7 @@
 		(property "Reference" "SW1"
 			(at 3.25 -2.05 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "0a010578-6fde-4f34-87a2-3f060754ea12")
 			(effects
 				(font
@@ -11518,7 +11530,7 @@
 			(pintype "passive")
 			(uuid "5004a689-e06a-4e51-9498-148e0f0f5b48")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-10xx.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15188,6 +15200,17 @@
 		(layer "Edge.Cuts")
 		(uuid "762414ab-406d-46c1-b078-b73c23639b46")
 	)
+	(gr_text "RC7\n"
+		(at 191.85 68 90)
+		(layer "F.SilkS")
+		(uuid "076b6c2c-5b24-449d-a509-d4e4eb85bd4e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "RB3\n\n"
 		(at 174.4 67.8 90)
 		(layer "F.SilkS")
@@ -15232,6 +15255,17 @@
 			)
 		)
 	)
+	(gr_text "RC1\n"
+		(at 204.5 68 90)
+		(layer "F.SilkS")
+		(uuid "415b36d1-b244-4a4c-89ab-843aa5235f50")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "RB4\n"
 		(at 171.2 67.8 90)
 		(layer "F.SilkS")
@@ -15243,10 +15277,32 @@
 			)
 		)
 	)
+	(gr_text "RC0"
+		(at 207.1 68 90)
+		(layer "F.SilkS")
+		(uuid "4551b945-ee7e-4ca0-a2ef-184b22e2b311")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "RB2"
 		(at 176.2 67.8 90)
 		(layer "F.SilkS")
 		(uuid "4e645fec-247e-4594-ae0f-226185d860c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "RC5\n"
+		(at 197 68 90)
+		(layer "F.SilkS")
+		(uuid "53c4036f-f257-4faf-950d-b8358effcba4")
 		(effects
 			(font
 				(size 1 1)
@@ -15321,6 +15377,17 @@
 			)
 		)
 	)
+	(gr_text "RC4\n"
+		(at 199.5 68 90)
+		(layer "F.SilkS")
+		(uuid "ab4e1561-6ee9-4b4c-bfc7-0d691655362f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "RB0"
 		(at 181.4 67.8 90)
 		(layer "F.SilkS")
@@ -15347,6 +15414,17 @@
 		(at 166 67.8 90)
 		(layer "F.SilkS")
 		(uuid "d7bed22e-70d1-447d-8d1b-54940d9bc684")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "RC2\n\n"
+		(at 202.75 68 90)
+		(layer "F.SilkS")
+		(uuid "dc524f5d-39f2-4ea6-b8d4-ed429e987ae6")
 		(effects
 			(font
 				(size 1 1)
@@ -15381,6 +15459,28 @@
 		(at 169.55 118.5 90)
 		(layer "F.SilkS")
 		(uuid "ecd52c91-aa3f-477c-b7eb-26be7505c9bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "Reset"
+		(at 153.25 114.5 0)
+		(layer "F.SilkS")
+		(uuid "eea3c537-5782-42c6-a845-52bd65576e45")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "RC6\n"
+		(at 194.25 68 90)
+		(layer "F.SilkS")
+		(uuid "f83e0b05-a2c8-475f-bfbc-1c4763775830")
 		(effects
 			(font
 				(size 1 1)
