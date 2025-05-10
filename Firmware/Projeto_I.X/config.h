@@ -69,6 +69,7 @@
 // Use project enums instead of #define for ON and OFF.
 
 #include <xc.h>
+#define _XTAL_FREQ 20000000
 
 #define setBit(reg, bit) ((reg) |= (1<<bit))
 #define resetBit(reg, bit) ((reg) &= ~(1<<bit))
