@@ -79,8 +79,7 @@
         "clearance|204685000|74003200|91c4340a-cd53-4bd9-9910-c661c9ee391a|04ca53a9-fb5a-4716-bea1-90f9a0000ae5",
         "clearance|204685000|86455000|fa5bab3c-cb2c-4c3e-9164-635362fcb083|2c3cb1e3-d089-4cd3-9ede-5bcfe3edaa20",
         "clearance|205135000|74003200|c8ed1aa8-ab76-437e-869f-191152e2ba03|3f4c4567-c474-4e79-aa01-e715e980b83b",
-        "clearance|205135000|86455000|2c3cb1e3-d089-4cd3-9ede-5bcfe3edaa20|91c4340a-cd53-4bd9-9910-c661c9ee391a",
-        "starved_thermal|119475000|68925000|d4c65f63-9e36-4479-8d99-b89a3dbde132|d77b7fae-cdb7-4f8d-9106-e28362f226e6|F.Cu"
+        "clearance|205135000|86455000|2c3cb1e3-d089-4cd3-9ede-5bcfe3edaa20|91c4340a-cd53-4bd9-9910-c661c9ee391a"
       ],
       "meta": {
         "version": 2
