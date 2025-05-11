@@ -7,14 +7,7 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "Projeto_I.c" 2
-
-
-
-
-
-
-
-
+# 12 "Projeto_I.c"
 # 1 "./config.h" 1
 
 
@@ -5986,16 +5979,73 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 2 3
 # 72 "./config.h" 2
-# 10 "Projeto_I.c" 2
+# 13 "Projeto_I.c" 2
+
 
 
 
 void main(void) {
-    ((TRISB) &= ~(1<<4));
-    ((LATB) &= ~(1<<4));
+    int redLed_1 = 2,
+        yellowLed_1 = 1,
+        greenLed_1 = 0,
+        redLed_2 = 5,
+        yellowLed_2 = 4,
+        greenLed_2 = 3;
+
+
+    ((TRISB) &= ~(1<<redLed_1));
+    ((LATB) &= ~(1<<redLed_1));
+    ((TRISB) &= ~(1<<yellowLed_1));
+    ((LATB) &= ~(1<<yellowLed_1));
+    ((TRISB) &= ~(1<<greenLed_1));
+    ((LATB) &= ~(1<<greenLed_1));
+
+
+    ((TRISB) &= ~(1<<redLed_2));
+    ((LATB) &= ~(1<<redLed_2));
+    ((TRISB) &= ~(1<<yellowLed_2));
+    ((LATB) &= ~(1<<yellowLed_2));
+    ((TRISB) &= ~(1<<greenLed_2));
+    ((LATB) &= ~(1<<greenLed_2));
+
+
+
 
     while(1){
-        ((LATB) ^= (1<<4));
+
+
+        ((LATB) |= (1<<greenLed_1));
+        ((LATB) &= ~(1<<yellowLed_1));
+        ((LATB) &= ~(1<<redLed_1));
+        ((LATB) |= (1<<redLed_2));
+        ((LATB) &= ~(1<<greenLed_2));
+        ((LATB) &= ~(1<<yellowLed_2));
+        _delay((unsigned long)((7000)*(20000000/4000.0)));
+
+        ((LATB) |= (1<<yellowLed_1));
+        ((LATB) &= ~(1<<redLed_1));
+        ((LATB) &= ~(1<<greenLed_1));
+        ((LATB) |= (1<<redLed_2));
+        ((LATB) &= ~(1<<greenLed_2));
+        ((LATB) &= ~(1<<yellowLed_2));
         _delay((unsigned long)((1000)*(20000000/4000.0)));
+
+
+        ((LATB) |= (1<<redLed_1));
+        ((LATB) &= ~(1<<greenLed_1));
+        ((LATB) &= ~(1<<yellowLed_1));
+        ((LATB) |= (1<<greenLed_2));
+        ((LATB) &= ~(1<<redLed_2));
+        ((LATB) &= ~(1<<yellowLed_2));
+        _delay((unsigned long)((7000)*(20000000/4000.0)));
+
+        ((LATB) |= (1<<redLed_1));
+        ((LATB) &= ~(1<<greenLed_1));
+        ((LATB) &= ~(1<<yellowLed_1));
+        ((LATB) |= (1<<yellowLed_2));
+        ((LATB) &= ~(1<<redLed_2));
+        ((LATB) &= ~(1<<greenLed_2));
+        _delay((unsigned long)((1000)*(20000000/4000.0)));
+
     }
 }
