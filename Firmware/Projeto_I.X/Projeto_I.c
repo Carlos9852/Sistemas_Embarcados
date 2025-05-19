@@ -15,66 +15,21 @@
 /* ========================================================================= */
 /* --- Function Main --- */
 void main(void) {
-    int redLed_1 = 2,
-        yellowLed_1 = 1,
-        greenLed_1 = 0,
-        redLed_2 = 5,
-        yellowLed_2 = 4,
-        greenLed_2 = 3;
-    
-    //Configuração para o primeiro semáforo
-    resetBit(TRISB, redLed_1);
-    resetBit(LATB, redLed_1);
-    resetBit(TRISB, yellowLed_1);
-    resetBit(LATB, yellowLed_1);
-    resetBit(TRISB, greenLed_1);
-    resetBit(LATB, greenLed_1);
-    
-    //Configuração para o segundo semáforo
-    resetBit(TRISB, redLed_2);
-    resetBit(LATB, redLed_2);
-    resetBit(TRISB, yellowLed_2);
-    resetBit(LATB, yellowLed_2);
-    resetBit(TRISB, greenLed_2);
-    resetBit(LATB, greenLed_2);
+    TRISB = 0;
+    LATB = 0 ;
 
     
 /* ========================================================================= */
 /* --- Loop --- */
     while(1){
-        
-        setBit(LATB, greenLed_1);
-        resetBit(LATB, yellowLed_1);
-        resetBit(LATB, redLed_1);
-        setBit(LATB, redLed_2);
-        resetBit(LATB, greenLed_2);
-        resetBit(LATB, yellowLed_2);
+        LATB = 0b00110000;
         __delay_ms(7000);
-        
-        setBit(LATB, yellowLed_1);
-        resetBit(LATB, redLed_1);
-        resetBit(LATB, greenLed_1);
-        setBit(LATB, redLed_2);
-        resetBit(LATB, greenLed_2);
-        resetBit(LATB, yellowLed_2);
+        LATB = 0b01010000;
         __delay_ms(1000);
-        
-        setBit(LATB, redLed_1);
-        resetBit(LATB, greenLed_1);
-        resetBit(LATB, yellowLed_1);
-        setBit(LATB, greenLed_2);
-        resetBit(LATB, redLed_2);
-        resetBit(LATB, yellowLed_2);
+        LATB = 0b10000100;
         __delay_ms(7000);
-        
-        setBit(LATB, redLed_1);
-        resetBit(LATB, greenLed_1);
-        resetBit(LATB, yellowLed_1);
-        setBit(LATB, yellowLed_2);
-        resetBit(LATB, redLed_2);
-        resetBit(LATB, greenLed_2);
+        LATB = 0b10001000;
         __delay_ms(1000);
-        
     }
 }
 

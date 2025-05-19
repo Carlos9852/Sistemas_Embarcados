@@ -604,160 +604,46 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "18
-[; ;Projeto_I.c: 18:     int redLed_1 = 2,
-[v _redLed_1 `i ~T0 @X0 1 a ]
-[e = _redLed_1 -> 2 `i ]
+[; ;Projeto_I.c: 18:     TRISB = 0;
+[e = _TRISB -> -> 0 `i `uc ]
 "19
-[; ;Projeto_I.c: 19:         yellowLed_1 = 1,
-[v _yellowLed_1 `i ~T0 @X0 1 a ]
-[e = _yellowLed_1 -> 1 `i ]
-"20
-[; ;Projeto_I.c: 20:         greenLed_1 = 0,
-[v _greenLed_1 `i ~T0 @X0 1 a ]
-[e = _greenLed_1 -> 0 `i ]
-"21
-[; ;Projeto_I.c: 21:         redLed_2 = 5,
-[v _redLed_2 `i ~T0 @X0 1 a ]
-[e = _redLed_2 -> 5 `i ]
-"22
-[; ;Projeto_I.c: 22:         yellowLed_2 = 4,
-[v _yellowLed_2 `i ~T0 @X0 1 a ]
-[e = _yellowLed_2 -> 4 `i ]
-"23
-[; ;Projeto_I.c: 23:         greenLed_2 = 3;
-[v _greenLed_2 `i ~T0 @X0 1 a ]
-[e = _greenLed_2 -> 3 `i ]
-"26
-[; ;Projeto_I.c: 26:     ((TRISB) &= ~(1<<redLed_1));
-[e =& _TRISB -> ~ << -> 1 `i _redLed_1 `Vuc ]
-"27
-[; ;Projeto_I.c: 27:     ((LATB) &= ~(1<<redLed_1));
-[e =& _LATB -> ~ << -> 1 `i _redLed_1 `Vuc ]
-"28
-[; ;Projeto_I.c: 28:     ((TRISB) &= ~(1<<yellowLed_1));
-[e =& _TRISB -> ~ << -> 1 `i _yellowLed_1 `Vuc ]
-"29
-[; ;Projeto_I.c: 29:     ((LATB) &= ~(1<<yellowLed_1));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_1 `Vuc ]
-"30
-[; ;Projeto_I.c: 30:     ((TRISB) &= ~(1<<greenLed_1));
-[e =& _TRISB -> ~ << -> 1 `i _greenLed_1 `Vuc ]
-"31
-[; ;Projeto_I.c: 31:     ((LATB) &= ~(1<<greenLed_1));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_1 `Vuc ]
-"34
-[; ;Projeto_I.c: 34:     ((TRISB) &= ~(1<<redLed_2));
-[e =& _TRISB -> ~ << -> 1 `i _redLed_2 `Vuc ]
-"35
-[; ;Projeto_I.c: 35:     ((LATB) &= ~(1<<redLed_2));
-[e =& _LATB -> ~ << -> 1 `i _redLed_2 `Vuc ]
-"36
-[; ;Projeto_I.c: 36:     ((TRISB) &= ~(1<<yellowLed_2));
-[e =& _TRISB -> ~ << -> 1 `i _yellowLed_2 `Vuc ]
-"37
-[; ;Projeto_I.c: 37:     ((LATB) &= ~(1<<yellowLed_2));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_2 `Vuc ]
-"38
-[; ;Projeto_I.c: 38:     ((TRISB) &= ~(1<<greenLed_2));
-[e =& _TRISB -> ~ << -> 1 `i _greenLed_2 `Vuc ]
-"39
-[; ;Projeto_I.c: 39:     ((LATB) &= ~(1<<greenLed_2));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_2 `Vuc ]
-"44
-[; ;Projeto_I.c: 44:     while(1){
+[; ;Projeto_I.c: 19:     LATB = 0 ;
+[e = _LATB -> -> 0 `i `uc ]
+"24
+[; ;Projeto_I.c: 24:     while(1){
 [e :U 393 ]
 {
-"47
-[; ;Projeto_I.c: 47:         ((LATB) |= (1<<greenLed_1));
-[e =| _LATB -> << -> 1 `i _greenLed_1 `Vuc ]
-"48
-[; ;Projeto_I.c: 48:         ((LATB) &= ~(1<<yellowLed_1));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_1 `Vuc ]
-"49
-[; ;Projeto_I.c: 49:         ((LATB) &= ~(1<<redLed_1));
-[e =& _LATB -> ~ << -> 1 `i _redLed_1 `Vuc ]
-"50
-[; ;Projeto_I.c: 50:         ((LATB) |= (1<<redLed_2));
-[e =| _LATB -> << -> 1 `i _redLed_2 `Vuc ]
-"51
-[; ;Projeto_I.c: 51:         ((LATB) &= ~(1<<greenLed_2));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_2 `Vuc ]
-"52
-[; ;Projeto_I.c: 52:         ((LATB) &= ~(1<<yellowLed_2));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_2 `Vuc ]
-"53
-[; ;Projeto_I.c: 53:         _delay((unsigned long)((7000)*(20000000/4000.0)));
+"25
+[; ;Projeto_I.c: 25:         LATB = 0b00110000;
+[e = _LATB -> -> 48 `i `uc ]
+"26
+[; ;Projeto_I.c: 26:         _delay((unsigned long)((7000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 7000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"55
-[; ;Projeto_I.c: 55:         ((LATB) |= (1<<yellowLed_1));
-[e =| _LATB -> << -> 1 `i _yellowLed_1 `Vuc ]
-"56
-[; ;Projeto_I.c: 56:         ((LATB) &= ~(1<<redLed_1));
-[e =& _LATB -> ~ << -> 1 `i _redLed_1 `Vuc ]
-"57
-[; ;Projeto_I.c: 57:         ((LATB) &= ~(1<<greenLed_1));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_1 `Vuc ]
-"58
-[; ;Projeto_I.c: 58:         ((LATB) |= (1<<redLed_2));
-[e =| _LATB -> << -> 1 `i _redLed_2 `Vuc ]
-"59
-[; ;Projeto_I.c: 59:         ((LATB) &= ~(1<<greenLed_2));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_2 `Vuc ]
-"60
-[; ;Projeto_I.c: 60:         ((LATB) &= ~(1<<yellowLed_2));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_2 `Vuc ]
-"61
-[; ;Projeto_I.c: 61:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+"27
+[; ;Projeto_I.c: 27:         LATB = 0b01010000;
+[e = _LATB -> -> 80 `i `uc ]
+"28
+[; ;Projeto_I.c: 28:         _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"64
-[; ;Projeto_I.c: 64:         ((LATB) |= (1<<redLed_1));
-[e =| _LATB -> << -> 1 `i _redLed_1 `Vuc ]
-"65
-[; ;Projeto_I.c: 65:         ((LATB) &= ~(1<<greenLed_1));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_1 `Vuc ]
-"66
-[; ;Projeto_I.c: 66:         ((LATB) &= ~(1<<yellowLed_1));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_1 `Vuc ]
-"67
-[; ;Projeto_I.c: 67:         ((LATB) |= (1<<greenLed_2));
-[e =| _LATB -> << -> 1 `i _greenLed_2 `Vuc ]
-"68
-[; ;Projeto_I.c: 68:         ((LATB) &= ~(1<<redLed_2));
-[e =& _LATB -> ~ << -> 1 `i _redLed_2 `Vuc ]
-"69
-[; ;Projeto_I.c: 69:         ((LATB) &= ~(1<<yellowLed_2));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_2 `Vuc ]
-"70
-[; ;Projeto_I.c: 70:         _delay((unsigned long)((7000)*(20000000/4000.0)));
+"29
+[; ;Projeto_I.c: 29:         LATB = 0b10000100;
+[e = _LATB -> -> 132 `i `uc ]
+"30
+[; ;Projeto_I.c: 30:         _delay((unsigned long)((7000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 7000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"72
-[; ;Projeto_I.c: 72:         ((LATB) |= (1<<redLed_1));
-[e =| _LATB -> << -> 1 `i _redLed_1 `Vuc ]
-"73
-[; ;Projeto_I.c: 73:         ((LATB) &= ~(1<<greenLed_1));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_1 `Vuc ]
-"74
-[; ;Projeto_I.c: 74:         ((LATB) &= ~(1<<yellowLed_1));
-[e =& _LATB -> ~ << -> 1 `i _yellowLed_1 `Vuc ]
-"75
-[; ;Projeto_I.c: 75:         ((LATB) |= (1<<yellowLed_2));
-[e =| _LATB -> << -> 1 `i _yellowLed_2 `Vuc ]
-"76
-[; ;Projeto_I.c: 76:         ((LATB) &= ~(1<<redLed_2));
-[e =& _LATB -> ~ << -> 1 `i _redLed_2 `Vuc ]
-"77
-[; ;Projeto_I.c: 77:         ((LATB) &= ~(1<<greenLed_2));
-[e =& _LATB -> ~ << -> 1 `i _greenLed_2 `Vuc ]
-"78
-[; ;Projeto_I.c: 78:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+"31
+[; ;Projeto_I.c: 31:         LATB = 0b10001000;
+[e = _LATB -> -> 136 `i `uc ]
+"32
+[; ;Projeto_I.c: 32:         _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"80
-[; ;Projeto_I.c: 80:     }
+"33
+[; ;Projeto_I.c: 33:     }
 }
 [e :U 392 ]
 [e $U 393  ]
 [e :U 394 ]
-"81
-[; ;Projeto_I.c: 81: }
+"34
+[; ;Projeto_I.c: 34: }
 [e :UE 391 ]
 }

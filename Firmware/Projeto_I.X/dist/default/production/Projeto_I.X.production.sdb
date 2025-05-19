@@ -36,17 +36,5 @@
 "17 C:\Users\carlo\OneDrive\Documentos\Engenharia\Sistemas_Embarcados\Firmware\Projeto_I.X\Projeto_I.c
 [v _main main `(v  1 e 1 0 ]
 {
-"23
-[v main@greenLed_2 greenLed_2 `i  1 a 2 12 ]
-"22
-[v main@yellowLed_2 yellowLed_2 `i  1 a 2 10 ]
-"21
-[v main@redLed_2 redLed_2 `i  1 a 2 8 ]
-"20
-[v main@greenLed_1 greenLed_1 `i  1 a 2 6 ]
-"19
-[v main@yellowLed_1 yellowLed_1 `i  1 a 2 4 ]
-"18
-[v main@redLed_1 redLed_1 `i  1 a 2 2 ]
-"81
+"34
 } 0

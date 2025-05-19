@@ -1,10 +1,9 @@
 __S0 8000 0 ABS 0
-__S1 F 0 ABS 0
+__S1 3 0 ABS 0
 __S4 0 0 ABS 0
 __S5 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
-main@greenLed_1 7 0 COMRAM 1
 _LATB F8A 0 ABS 0
 _main 802 0 CODE 0
 ___sp 0 0 STACK 2
@@ -16,7 +15,6 @@ __HRAM 0 0 ABS 0
 __LRAM 1 0 ABS 0
 __Hconfig 30000E 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
-main@yellowLed_2 B 0 COMRAM 1
 ___inthi_stack_hi 0 0 STACK 2
 __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
@@ -82,15 +80,14 @@ __Linit 7FFC 0 CODE 0
 __Hintcodelo 18 0 CODE 0
 __Lintcodelo 18 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main B72 0 CODE 0
+__end_of_main 87E 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
-end_of_initialization B72 0 CODE 0
+end_of_initialization 87E 0 CODE 0
 __Hsivt_lo 18 0 CODE 0
 __Lsivt_lo 18 0 CODE 0
-main@greenLed_2 D 0 COMRAM 1
 __Hibigdata 0 0 CODE 0
 __Libigdata 0 0 CODE 0
 __Hifardata 0 0 CODE 0
@@ -116,12 +113,10 @@ __Lbank7 0 0 ABS 0
 __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
 __ptext0 802 0 CODE 0
-main@yellowLed_1 5 0 COMRAM 1
 ___stack_hi 0 0 STACK 2
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-main@redLed_1 3 0 COMRAM 1
-__end_of__initialization B72 0 CODE 0
+__end_of__initialization 87E 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
@@ -135,13 +130,12 @@ __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
 __Hparam 0 0 COMRAM 1
 __Lparam 0 0 COMRAM 1
-main@redLed_2 9 0 COMRAM 1
 __Hspace_0 8000 0 ABS 0
 __HcstackCOMRAM 0 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
 __pcstackCOMRAM 1 0 COMRAM 1
-__Hspace_1 F 0 ABS 0
+__Hspace_1 3 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hsmallconst 802 0 SMALLCONST 0
 __Lsmallconst 800 0 SMALLCONST 0
@@ -152,7 +146,7 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__pcinit B72 0 CODE 0
+__pcinit 87E 0 CODE 0
 __ramtop 800 0 RAM 0
 __mediumconst 800 0 SMALLCONST 0
 __Hconst 0 0 CONST 0
@@ -173,70 +167,34 @@ intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
 ___inthi_stack_lo 0 0 STACK 2
-start_initialization B72 0 CODE 0
+start_initialization 87E 0 CODE 0
 ___intlo_stack_lo 0 0 STACK 2
-__initialization B72 0 CODE 0
+__initialization 87E 0 CODE 0
 __activetblptr 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
 init 7FFC 7FFF CODE 7FFC 0
 smallconst 800 801 SMALLCONST 800 0
-cstackCOMRAM 1 E COMRAM 1 1
-text0 802 B77 CODE 802 0
+cstackCOMRAM 1 2 COMRAM 1 1
+text0 802 883 CODE 802 0
 %locals
 dist/default/production\Projeto_I.X.production.o
-C:\Users\carlo\AppData\Local\Temp\xcAsegc.\driver_tmp_1.s
-505 B72 0 CODE 0
-507 B72 0 CODE 0
-510 B72 0 CODE 0
-516 B72 0 CODE 0
-518 B72 0 CODE 0
-519 B74 0 CODE 0
+C:\Users\carlo\AppData\Local\Temp\xcAs46c.\driver_tmp_1.s
+505 87E 0 CODE 0
+507 87E 0 CODE 0
+510 87E 0 CODE 0
+516 87E 0 CODE 0
+518 87E 0 CODE 0
+519 880 0 CODE 0
 Projeto_I.c
 17 802 0 CODE 0
 18 802 0 CODE 0
-19 80A 0 CODE 0
-20 812 0 CODE 0
-21 81A 0 CODE 0
-22 822 0 CODE 0
-23 82A 0 CODE 0
-26 832 0 CODE 0
-27 834 0 CODE 0
-28 836 0 CODE 0
-29 838 0 CODE 0
-30 83A 0 CODE 0
-31 83C 0 CODE 0
-34 83E 0 CODE 0
-35 840 0 CODE 0
-36 842 0 CODE 0
-37 844 0 CODE 0
-38 846 0 CODE 0
-39 848 0 CODE 0
-47 84A 0 CODE 0
-48 866 0 CODE 0
-49 884 0 CODE 0
-50 8A2 0 CODE 0
-51 8BE 0 CODE 0
-52 8DC 0 CODE 0
-53 8FA 0 CODE 0
-55 912 0 CODE 0
-56 92E 0 CODE 0
-57 94C 0 CODE 0
-58 96A 0 CODE 0
-59 986 0 CODE 0
-60 9A4 0 CODE 0
-61 9C2 0 CODE 0
-64 9DA 0 CODE 0
-65 9F6 0 CODE 0
-66 A14 0 CODE 0
-67 A32 0 CODE 0
-68 A4E 0 CODE 0
-69 A6C 0 CODE 0
-70 A8A 0 CODE 0
-72 AA2 0 CODE 0
-73 ABE 0 CODE 0
-74 ADC 0 CODE 0
-75 AFA 0 CODE 0
-76 B16 0 CODE 0
-77 B34 0 CODE 0
-78 B52 0 CODE 0
+19 804 0 CODE 0
+25 806 0 CODE 0
+26 80A 0 CODE 0
+27 822 0 CODE 0
+28 826 0 CODE 0
+29 83E 0 CODE 0
+30 842 0 CODE 0
+31 85A 0 CODE 0
+32 85E 0 CODE 0

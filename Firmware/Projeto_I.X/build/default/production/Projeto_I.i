@@ -5985,67 +5985,20 @@ unsigned char __t3rd16on(void);
 
 
 void main(void) {
-    int redLed_1 = 2,
-        yellowLed_1 = 1,
-        greenLed_1 = 0,
-        redLed_2 = 5,
-        yellowLed_2 = 4,
-        greenLed_2 = 3;
-
-
-    ((TRISB) &= ~(1<<redLed_1));
-    ((LATB) &= ~(1<<redLed_1));
-    ((TRISB) &= ~(1<<yellowLed_1));
-    ((LATB) &= ~(1<<yellowLed_1));
-    ((TRISB) &= ~(1<<greenLed_1));
-    ((LATB) &= ~(1<<greenLed_1));
-
-
-    ((TRISB) &= ~(1<<redLed_2));
-    ((LATB) &= ~(1<<redLed_2));
-    ((TRISB) &= ~(1<<yellowLed_2));
-    ((LATB) &= ~(1<<yellowLed_2));
-    ((TRISB) &= ~(1<<greenLed_2));
-    ((LATB) &= ~(1<<greenLed_2));
+    TRISB = 0;
+    LATB = 0 ;
 
 
 
 
     while(1){
-
-
-        ((LATB) |= (1<<greenLed_1));
-        ((LATB) &= ~(1<<yellowLed_1));
-        ((LATB) &= ~(1<<redLed_1));
-        ((LATB) |= (1<<redLed_2));
-        ((LATB) &= ~(1<<greenLed_2));
-        ((LATB) &= ~(1<<yellowLed_2));
+        LATB = 0b00110000;
         _delay((unsigned long)((7000)*(20000000/4000.0)));
-
-        ((LATB) |= (1<<yellowLed_1));
-        ((LATB) &= ~(1<<redLed_1));
-        ((LATB) &= ~(1<<greenLed_1));
-        ((LATB) |= (1<<redLed_2));
-        ((LATB) &= ~(1<<greenLed_2));
-        ((LATB) &= ~(1<<yellowLed_2));
+        LATB = 0b01010000;
         _delay((unsigned long)((1000)*(20000000/4000.0)));
-
-
-        ((LATB) |= (1<<redLed_1));
-        ((LATB) &= ~(1<<greenLed_1));
-        ((LATB) &= ~(1<<yellowLed_1));
-        ((LATB) |= (1<<greenLed_2));
-        ((LATB) &= ~(1<<redLed_2));
-        ((LATB) &= ~(1<<yellowLed_2));
+        LATB = 0b10000100;
         _delay((unsigned long)((7000)*(20000000/4000.0)));
-
-        ((LATB) |= (1<<redLed_1));
-        ((LATB) &= ~(1<<greenLed_1));
-        ((LATB) &= ~(1<<yellowLed_1));
-        ((LATB) |= (1<<yellowLed_2));
-        ((LATB) &= ~(1<<redLed_2));
-        ((LATB) &= ~(1<<greenLed_2));
+        LATB = 0b10001000;
         _delay((unsigned long)((1000)*(20000000/4000.0)));
-
     }
 }
